@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <title>Mašinistai</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="stiliai.css">
+  </head>
+  <body>
+    <div class="container">
+    <header>
+      <p class="sukis">Mašinistų klubas</p>
+        <div class = "ikonos">
+            <a href = "https://www.facebook.com" class = "fb" target="_blank"></a>
+            <a href = "https:/www.twitter.com" class = "tw" target="_blank"> </a>
+            <a href = "https:/www.youtube.com" class = "yt" target="_blank"></a>
+        </div>
+    </header>  
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navi"id ="navigacija">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse navi" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="puslapis.html">Pagrindinis</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Forumas</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="paslaugos.html">Paslaugos</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="kontaktai.html">Kontaktai</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Taisyklės</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0" target="_blank" method="get" action="https://www.google.lt">
+            <input class="form-control mr-sm-2" type="search" name="q" placeholder="Paieška" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Ieškoti</button>
+          </form>
+        </div>
+    </nav>
+    <main class="clearfix">
+        <h3 id="pas">Paslaugos:</h3>
+        <img id="raktas" src="raktas.png">
+        <ul>
+            <li> Tepalų ir filtrų keitimas </li>
+            <li> Profesionali važiuoklės patikra ir jos remontas </li>
+            <li> Elektros įrangos remontas </li>
+            <li> Stabdžių sistemos patikra ir remontas | ABS remontas </li>
+            <li> Duslintuvų remontas </li>
+            <li> Dyzelinių ir benzininių variklių remontas </li>
+            <li> Ratlankių virinimas </li>
+        </ul>
+    <p style="font-weight: bold"> Kaina nustatoma pamačius ir įvertinus defektą vietoje </p>
+    </main>
+    <footer>
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+          <a href="puslapis.html"> www.Masinistai.com</a>
+        </div>
+    </footer>
+  <script>
+      window.onscroll = function() {myFunction()};
+      
+      var navbar = document.getElementById("navigacija");
+      var sticky = navbar.offsetTop;
+      
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+      </script>
+  <script src="js/jquery-3.3.1.min.js" ></script>
+  <script src="js/popper.min.js" ></script>
+  <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
